@@ -1,0 +1,44 @@
+header{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+#contenedor{
+
+display: flex;
+max-width: 70%;
+
+
+}
+#img{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F29F05 100%);
+
+}
+
+
+#info{
+
+
+    max-width: 70%;
+}
+
+img{
+
+    max-width: 20rem;
+}
+
+
+/* Rectangle 15 
+
+position: absolute;
+width: 421px;
+height: 479px;
+left: 917px;
+top: 226px;
+
+background: linear-gradient(180deg, #FFFFFF 0%, #F29F05 100%);
+border-radius: 20px;
+
+*/
