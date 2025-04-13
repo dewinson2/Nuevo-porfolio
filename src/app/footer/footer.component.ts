@@ -7,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  openLinkedIn(): void {
+    window.open(
+      'https://www.linkedin.com/in/dewinson-manuel-cruz-familia-7685682a1',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  }
+  openMail(): void {
+    window.open(
+      'mailto:dewinson12@gmail.com',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  }
 
 }

@@ -5,6 +5,6 @@ import { PorfolioComponent } from './porfolio/porfolio.component';
 export const routes: Routes = [
 
     { path: 'Nav', component: NavComponent },
-    { path: 'porfolio', component: PorfolioComponent }
+    { path: '', component: PorfolioComponent }
 
 ];

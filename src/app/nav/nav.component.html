@@ -1,27 +1,32 @@
-<div class="relative">
-  <nav class="w-full">
-      <!-- Botón hamburguesa para móvil -->
-      <button (click)="toggleMenu()" class="md:hidden absolute right-4 top-4 z-20">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-      </button>
+<div class="fixed top-0 left-0 right-0 z-50">
+  <nav class="w-full px-4 md:px-0">
+    <!-- Botón hamburguesa para móvil -->
+    <button (click)="toggleMenu()" class="md:hidden absolute right-4 top-4 z-20">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
 
-      <!-- Menú -->
-      <ul [class.menu-open]="isMenuOpen" class="hidden md:flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 fixed md:relative top-0 left-0 right-0 h-screen md:h-auto bg-white md:bg-transparent z-10 md:shadow-[4px_5px_4px_rgba(242,_159,_5,_0.25)] max-w-none md:max-w-[40rem] w-full mx-auto rounded-none md:rounded-[25px] cursor-pointer">
-          <li class="py-4 md:py-4 px-4 hover:text-orange-500 transition-colors">Experiencia</li>
-          <li class="py-4 md:py-4 px-4 hover:text-orange-500 transition-colors">Proyectos</li>
-          <li class="py-4 md:py-4 px-4 hover:text-orange-500 transition-colors">Sobre mí</li>
-          <li class="py-4 md:py-4 px-4 hover:text-orange-500 transition-colors">Contacto</li>
-          <li class="py-4 md:py-4 px-4">
-              <label class="switch">
-                  <input type="checkbox" 
-                         [checked]="isDarkMode" 
-                         (change)="toggleDarkMode()" />
-                  <span class="slider"></span>
-                  <span class="clouds_stars"></span>
-              </label>
-          </li>
-      </ul>
+    <!-- Menú (ajustado para reducir el espacio libre) -->
+    <ul [class.menu-open]="isMenuOpen" class="hidden md:flex flex-col md:flex-row justify-center items-center gap-2 md:gap-0 fixed md:relative top-0 left-0 right-0 h-screen md:h-auto bg-white md:bg-transparent z-10 md:shadow-[4px_5px_4px_rgba(142,_152,_196,_0.5)] max-w-none md:max-w-fit w-full mx-auto rounded-none md:rounded-full cursor-pointer">
+      <li class="py-4 md:py-2 px-4 md:px-6 hover:text-primary transition-colors">
+        <a class="transition" href="#experiencia" >Experiencia</a>
+      </li>
+      <li class="py-4 md:py-2 px-4 md:px-6 hover:text-primary transition-colors">
+        <a  class="transition" href="#proyectos" >Proyectos</a>
+      </li>
+      <li class="py-4 md:py-2 px-4 md:px-6 hover:text-primary transition-colors">
+        <a  class="transition" href="#sobre-mi">Sobre mí</a>
+      </li>
+      <li class="py-4 md:py-2 px-4 md:px-6">
+        <label class="switch">
+          <input type="checkbox" 
+                [checked]="isDarkMode" 
+                (change)="toggleDarkMode()" />
+          <span class="slider"></span>
+          <span class="clouds_stars"></span>
+        </label>
+      </li>
+    </ul>
   </nav>
 </div>

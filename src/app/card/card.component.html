@@ -1,0 +1,74 @@
+<div class="max-w-md  text-black rounded-3xl overflow-hidden relative border border-white/10 shadow-xl dark:text-background">
+    <!-- Borde superior azul -->
+    <div class="absolute top-0 left-6 right-6 h-1.5 bg-blue-500 rounded-b-md"></div>
+    
+    <!-- Imagen del proyecto -->
+    <div class="relative w-full h-[225px] overflow-hidden border-b border-white/10">
+        <img 
+            src="p1.png" 
+            alt="Project preview"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        />
+    </div>
+    
+    <!-- Contenido -->
+    <div class="p-6 space-y-4.5">
+        <!-- Título del proyecto -->
+        <h3 class="text-2xl font-bold leading-tight bg-gradient-to-r from-black to-primary   bg-clip-text text-transparent dark:text-background">
+            PlayClass
+        </h3>
+
+        <!-- Skills -->
+        <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-1 rounded-full border border-primary  text-primary text-sm hover:border-blue-400/50 transition-all">
+                React
+            </span>
+            <span class="px-4 py-1 rounded-full border border-primary  text-primary text-sm hover:border-blue-400/50 transition-all">
+                TailwindCSS
+            </span>
+        </div>
+
+        <!-- Descripción -->
+        <p class=" leading-relaxed">
+           Es una WebApp de Educacion interactiva donde por medio de juegos la idea es que las personas aprendan de una manera mas divertida y dinamica por medio de juegos educativos como Sudokus Trivias etc, tiene implementacion con IA para hacer Quizz automaticos y personalizados.
+        </p>
+
+       <div  class="flex gap-4">
+
+        <a 
+        href="#" 
+        class="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-br border   transition-all group"
+    >
+        <svg 
+            class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24"
+            fill="currentColor"
+        >
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <span class="font-medium">View Code</span>
+    </a>
+
+
+    <a 
+        href="#" 
+        class="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-br border   transition-all group"
+    >
+    <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect x="0.49881" y="0.83252" width="38.99" height="38.99" fill="url(#pattern0_62_708)"/>
+        <defs>
+        <pattern id="pattern0_62_708" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_62_708" transform="scale(0.0111111)"/>
+        </pattern>
+        <image id="image0_62_708" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+        </defs>
+        </svg>
+        
+        <span class="font-medium">Priview</span>
+    </a>
+       </div>
+
+
+    </div>
+</div>

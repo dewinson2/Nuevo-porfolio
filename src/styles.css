@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 
@@ -12,17 +14,48 @@ body{
     font-weight:300;
     font-style: normal;
 }
+html{
 
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 @theme {
-    --color-background: #0a0a0a; /* Negro casi absoluto */
+    --color-background: #F0F0F0; 
+    --color-backgroundDark: #131314;
+
     --color-foreground: #fafafa; /* Blanco casi puro */
-    --color-primary: #fafafa; /* Blanco casi puro */
-    --color-primary-foreground: #171717; /* Gris oscuro */
+    --color-primary: #8E98C4; /* Blanco casi puro */
+    --color-primary: #8E98C4; /* Gris oscuro */
     --color-secondary: #262626; /* Gris muy oscuro */
     --color-secondary-foreground: #fafafa; /* Blanco casi puro */
     --color-border: #262626; /* Gris muy oscuro */
     --color-input: #262626; /* Gris muy oscuro */
     --color-ring: #d4d4d4; /* Gris claro */
+    --font-unique:"Source Code Pro", serif;
+    --font-Onest:"Onest", serif
   }
   
 
