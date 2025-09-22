@@ -23,8 +23,16 @@ export interface Category{
 
  }
  export const experiences: experience[] = [
-    {
+     {
         id: 1,
+        position: "Desarrollador Frontend",
+        company: "Sildra Group",
+        startDate: "Julio 2025",
+        endDate: "Actualmente",
+        description: "Desarrollo y mantengo aplicaciones web utilizando Angular, asegurando una experiencia de usuario fluida y eficiente. Colaboro con equipos multidisciplinarios para implementar nuevas funcionalidades y optimizar el rendimiento de las aplicaciones."
+    },
+    {
+        id: 3,
         position: 'Desarrollador Frontend Angular',
         company: 'Ademass Training Development',
         startDate: 'Abril 2024',
@@ -37,9 +45,10 @@ export interface Category{
         position: "Desarrollador Frontend Angular",
         company: "No Country",
         startDate: "Octubre 2024",
-        endDate: "Presente",
+        endDate: "Febrero 2025",
         description: "Desarrollé una aplicación de gestión escolar con Angular, permitiendo a administradores, profesores y estudiantes acceder a funciones específicas según sus roles. Implementé una interfaz moderna y responsiva, optimizando la eficiencia y la usabilidad para todos los usuarios."
-    }
+    },
+   
 
 ]
 
