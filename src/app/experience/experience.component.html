@@ -10,24 +10,23 @@
         </h2>
         <div class="relative border-l border-gray-800 space-y-12">
             <!-- Primer trabajo -->
+             @for (item of experiences; track item.id) {
             <div class="relative pl-10">
                 <div class="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-gray-800 bg-gray-950"></div>
                 <div class="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-4 md:gap-8">
                     <!-- Columna izquierda: Título y detalles -->
                     <div>
-                        <h3 class="text-xl font-medium mb-1 text-primary">Desarrollador Frontend Angular</h3>
+                        <h3 class="text-xl font-medium mb-1 text-primary">{{item.position}}</h3>
                         <div class="flex flex-col text-sm">
-                            <span class="font-bold">No Country</span>
-                            <span>Octubre 2024 – Presente</span>
+                            <span class="font-bold">{{item.company}}</span>
+                            <span>{{item.startDate}} – {{item.endDate}}</span>
                         </div>
                     </div>
                     
                     <!-- Columna derecha: Descripción -->
                     <div class="space-y-4">
                         <p class="text-backgroundDark leading-relaxed dark:text-background">
-                            Desarrollé una aplicación de gestión escolar con Angular, permitiendo a administradores, profesores y
-                            estudiantes acceder a funciones específicas según sus roles. Implementé una interfaz moderna y
-                            responsiva, optimizando la eficiencia y la usabilidad para todos los usuarios.
+                            {{item.description}}
                         </p>
                         <a href="#" class="inline-flex items-center text-sm hover:text-gray-300 text-primary transition-colors">
                             Saber más
@@ -36,34 +35,10 @@
                     </div>
                 </div>
             </div>
+        }
 
             <!-- Segundo trabajo -->
-            <div class="relative pl-10">
-                <div class="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-gray-800 bg-gray-950"></div>
-                <div class="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-4 md:gap-8">
-                    <!-- Columna izquierda: Título y detalles -->
-                    <div>
-                        <h3 class="text-xl font-medium mb-1 text-primary">Desarrollador Frontend Angular</h3>
-                        <div class="flex flex-col text-sm">
-                            <span class="font-bold">Ademass Training Development</span>
-                            <span>Abril 2024 – Julio 2024</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Columna derecha: Descripción -->
-                    <div class="space-y-4">
-                        <p class="leading-relaxed">
-                            Desarrollé una aplicación web de gestión de tareas utilizando Angular, con el objetivo de proporcionar
-                            a los usuarios una herramienta eficiente para organizar y manejar sus tareas diarias. La aplicación
-                            permite crear, editar, eliminar y visualizar tareas, con opciones avanzadas de filtrado y categorización.
-                        </p>
-                        <a href="#" class="inline-flex items-center text-sm hover:text-gray-300 transition-colors text-primary">
-                            Saber más
-                            <!-- SVG omitido para brevedad -->
-                        </a>
-                    </div>
-                </div>
-            </div>
+         
         </div>
     </div>
 </section>

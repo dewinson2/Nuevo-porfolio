@@ -13,6 +13,7 @@ body{
     font-optical-sizing: auto;
     font-weight:300;
     font-style: normal;
+    background-color: rgb(115 137 153);
 }
 html{
 
@@ -39,16 +40,14 @@ html{
 
 
 
-
-
   
 @theme {
     --color-background: #F0F0F0; 
-    --color-backgroundDark: #131314;
+    --color-backgroundDark: #292937;
 
     --color-foreground: #fafafa; /* Blanco casi puro */
     --color-primary: #8E98C4; /* Blanco casi puro */
-    --color-primary: #8E98C4; /* Gris oscuro */
+    --color-primary: #f29f05; /* Gris oscuro */
     --color-secondary: #262626; /* Gris muy oscuro */
     --color-secondary-foreground: #fafafa; /* Blanco casi puro */
     --color-border: #262626; /* Gris muy oscuro */
@@ -57,5 +56,8 @@ html{
     --font-unique:"Source Code Pro", serif;
     --font-Onest:"Onest", serif
   }
+  
+
+
   
 

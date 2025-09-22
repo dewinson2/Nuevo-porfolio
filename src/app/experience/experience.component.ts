@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {experiences,experience} from '../types/interfaces';
 
 @Component({
   selector: 'app-experience',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.css'
 })
 export class ExperienceComponent {
+  experiences:experience[] = experiences;
 
 }
