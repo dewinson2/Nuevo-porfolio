@@ -51,4 +51,5 @@ export class NavComponent implements OnInit {
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
+
 }

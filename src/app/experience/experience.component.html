@@ -1,44 +1,40 @@
-<section id="experiencia" class="py-16 text-backgroundDark scroll-m-20  dark:text-background">
+<section id="experiencia" class="py-16 scroll-m-20">
     <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-12 flex items-center gap-2">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-2 text-zinc-900 dark:text-slate-100">
             <span>
-                <!-- SVG omitido para brevedad -->
                 <img src="Briefcase.svg" alt="" class="block dark:hidden">
                 <img src="BriefcaseOscuro.svg" alt="" class="hidden dark:block">
             </span>
             Experiencia laboral
         </h2>
-        <div class="relative border-l border-gray-800 space-y-12">
-            <!-- Primer trabajo -->
-             @for (item of experiences; track item.id) {
+        <div class="relative border-l border-zinc-300 dark:border-zinc-700 space-y-12">
+            @for (item of experiences; track item.id) {
             <div class="relative pl-10">
-                <div class="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border border-gray-800 bg-gray-950"></div>
+                <div class="absolute -left-[5px] mt-1.5 h-3 w-3 rounded-full border-2 border-primary bg-backgroundDark"></div>
                 <div class="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-4 md:gap-8">
-                    <!-- Columna izquierda: Título y detalles -->
+                    <!-- Columna izquierda -->
                     <div>
-                        <h3 class="text-xl font-medium mb-1 text-primary">{{item.position}}</h3>
-                        <div class="flex flex-col text-sm">
-                            <span class="font-bold">{{item.company}}</span>
-                            <span>{{item.startDate}} – {{item.endDate}}</span>
+                        <h3 class="text-xl font-bold mb-1 text-primary">{{item.position}}</h3>
+                        <div class="flex flex-col text-sm mt-1 gap-0.5">
+                            <span class="font-semibold text-zinc-800 dark:text-slate-200">{{item.company}}</span>
+                            <span class="text-zinc-500 dark:text-slate-400">{{item.startDate}} – {{item.endDate}}</span>
                         </div>
                     </div>
-                    
-                    <!-- Columna derecha: Descripción -->
+
+                    <!-- Columna derecha -->
                     <div class="space-y-4">
-                        <p class="text-backgroundDark leading-relaxed dark:text-background">
+                        <p class="text-zinc-700 dark:text-slate-300 leading-relaxed font-medium">
                             {{item.description}}
                         </p>
-                        <a href="#" class="inline-flex items-center text-sm hover:text-gray-300 text-primary transition-colors">
+                        @if (item.url) {
+                        <a [href]="item.url" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm text-primary hover:opacity-75 transition-opacity">
                             Saber más
-                            <!-- SVG omitido para brevedad -->
                         </a>
+                        }
                     </div>
                 </div>
             </div>
-        }
-
-            <!-- Segundo trabajo -->
-         
+            }
         </div>
     </div>
 </section>

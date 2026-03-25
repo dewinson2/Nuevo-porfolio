@@ -19,8 +19,7 @@ export interface Category{
     startDate: string;
     endDate: string;
     description: string;
-
-
+    url?: string;
  }
  export const experiences: experience[] = [
      {
@@ -32,15 +31,6 @@ export interface Category{
         description: "Desarrollo y mantengo aplicaciones web utilizando Angular, asegurando una experiencia de usuario fluida y eficiente. Colaboro con equipos multidisciplinarios para implementar nuevas funcionalidades y optimizar el rendimiento de las aplicaciones."
     },
     {
-        id: 3,
-        position: 'Desarrollador Frontend Angular',
-        company: 'Ademass Training Development',
-        startDate: 'Abril 2024',
-        endDate: 'Julio 2024',
-        description: 'Desarrollé una aplicación web de gestión de tareas utilizando Angular, con el objetivo de proporcionar a los usuarios una herramienta eficiente para organizar y manejar sus tareas diarias. La aplicación permite crear, editar, eliminar y visualizar tareas, con opciones avanzadas de filtrado y categorización.',
-       
-    },
-    {
         id: 2,
         position: "Desarrollador Frontend Angular",
         company: "No Country",
@@ -48,8 +38,14 @@ export interface Category{
         endDate: "Febrero 2025",
         description: "Desarrollé una aplicación de gestión escolar con Angular, permitiendo a administradores, profesores y estudiantes acceder a funciones específicas según sus roles. Implementé una interfaz moderna y responsiva, optimizando la eficiencia y la usabilidad para todos los usuarios."
     },
-   
-
+    {
+        id: 3,
+        position: 'Desarrollador Frontend Angular',
+        company: 'Ademass Training Development',
+        startDate: 'Abril 2024',
+        endDate: 'Julio 2024',
+        description: 'Desarrollé una aplicación web de gestión de tareas utilizando Angular, con el objetivo de proporcionar a los usuarios una herramienta eficiente para organizar y manejar sus tareas diarias. La aplicación permite crear, editar, eliminar y visualizar tareas, con opciones avanzadas de filtrado y categorización.',
+    },
 ]
 
 

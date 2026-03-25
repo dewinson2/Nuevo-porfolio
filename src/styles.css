@@ -1,63 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-
-body{
-
-
-    font-family: "Onest", serif;
+body {
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight:300;
+    font-weight: 450;
     font-style: normal;
-    background-color: #F5F7FA;
-}
-html{
-
-    scroll-behavior: smooth;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+    color: #1a1a2e;
 }
 
+.dark body {
+    color: #e2e8f0;
+}
 
+h1, h2, h3, h4 {
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
 
+p {
+    line-height: 1.75;
+    color: #374151;
+}
 
+.dark p {
+    color: #cbd5e1;
+}
 
+html {
+    scroll-behavior: smooth !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 @theme {
-    --color-background: #F0F0F0; 
-    --color-backgroundDark: #292937;
+    --color-background: #f8fafc;
+    --color-backgroundDark: #0d1117;
 
-    --color-foreground: #fafafa; /* Blanco casi puro */
-    --color-primary: #8E98C4; /* Blanco casi puro */
-    --color-primary: #f29f05; /* Gris oscuro */
-    --color-secondary: #262626; /* Gris muy oscuro */
-    --color-secondary-foreground: #fafafa; /* Blanco casi puro */
-    --color-border: #262626; /* Gris muy oscuro */
-    --color-input: #262626; /* Gris muy oscuro */
-    --color-ring: #d4d4d4; /* Gris claro */
-    --font-unique:"Source Code Pro", serif;
-    --font-Onest:"Onest", serif
-  }
-  
-
-
-  
-
+    --color-foreground: #fafafa;
+    --color-primary: #a78bfa;
+    --color-secondary: #1e2030;
+    --color-secondary-foreground: #fafafa;
+    --color-border: #2d2d3d;
+    --color-input: #1e2030;
+    --color-ring: #a78bfa;
+    --font-unique: "Space Grotesk", sans-serif;
+    --font-Onest: "Inter", sans-serif;
+}
