@@ -1,16 +1,40 @@
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:font-medium">Saltar al contenido principal</a>
+
 <div class="bg-background dark:bg-backgroundDark dark:text-background min-h-screen w-full relative">
 
   <!-- Focos luminosos estilo sol -->
-  <div class="spotlight spotlight-1"></div>
-  <div class="spotlight spotlight-2"></div>
-  <div class="spotlight spotlight-3"></div>
+  <div class="spotlight spotlight-1" aria-hidden="true"></div>
+  <div class="spotlight spotlight-2" aria-hidden="true"></div>
+  <div class="spotlight spotlight-3" aria-hidden="true"></div>
 
 <app-nav></app-nav>
-<app-header></app-header>
-<app-experience></app-experience>
-<app-proyects></app-proyects>
-<app-about-me></app-about-me>
-<app-footer></app-footer>
+<main id="main-content">
+  <app-header></app-header>
+
+  @defer (on viewport; prefetch on idle) {
+    <app-experience></app-experience>
+  } @placeholder {
+    <div class="py-16 min-h-[400px]" aria-hidden="true"></div>
+  }
+
+  @defer (on viewport; prefetch on idle) {
+    <app-proyects></app-proyects>
+  } @placeholder {
+    <div class="py-16 min-h-[400px]" aria-hidden="true"></div>
+  }
+
+  @defer (on viewport; prefetch on idle) {
+    <app-about-me></app-about-me>
+  } @placeholder {
+    <div class="py-16 min-h-[300px]" aria-hidden="true"></div>
+  }
+</main>
+
+@defer (on viewport; prefetch on idle) {
+  <app-footer></app-footer>
+} @placeholder {
+  <div class="py-16 min-h-[200px]" aria-hidden="true"></div>
+}
 
 
 </div>

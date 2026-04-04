@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   imports: [],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrl: './footer.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
   openLinkedIn(): void {
@@ -21,5 +22,4 @@ export class FooterComponent {
       'noopener,noreferrer'
     );
   }
-
 }
