@@ -2,8 +2,8 @@
     <div class="max-w-5xl mx-auto px-4">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-2 text-zinc-900 dark:text-slate-100">
             <span>
-                <img src="Briefcase.svg" alt="" class="block dark:hidden">
-                <img src="BriefcaseOscuro.svg" alt="" class="hidden dark:block">
+                <img src="Briefcase.svg" alt="" width="28" height="28" class="block dark:hidden">
+                <img src="BriefcaseOscuro.svg" alt="" width="28" height="28" class="hidden dark:block">
             </span>
             Experiencia laboral
         </h2>
@@ -27,7 +27,7 @@
                             {{item.description}}
                         </p>
                         @if (item.url) {
-                        <a [href]="item.url" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm text-primary hover:opacity-75 transition-opacity">
+                        <a [href]="item.url" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm text-primary hover:opacity-75 transition-opacity" [attr.aria-label]="'Saber más sobre ' + item.company + ' (abre en nueva pestaña)'">
                             Saber más
                         </a>
                         }
