@@ -59,7 +59,15 @@ export interface Category{
         githubUrl: 'https://github.com/No-Country-simulation/s21-20-t-webapp',
         category: [{id: 1, name: 'React'}, {id: 2, name: 'TailwindCSS'}, ]
     },
-   
+    {
+        id: 2,
+        title: 'JSON Viewer',
+        description: 'Herramienta web para visualizar, formatear y comparar archivos JSON de manera estructurada. Incluye editor con formateo y minificación, conversión entre JSON, XML y CSV, modo comparador entre dos JSON, y soporte para tema claro/oscuro.',
+        imageUrl: 'p2.png',
+        previewUrl: 'https://jsonviewer.dewinson.dev',
+        githubUrl: 'https://github.com/dewinson2/JSON-VIEWER',
+        category: [{id: 1, name: 'Next.js'}, {id: 2, name: 'TailwindCSS'}, {id: 3, name: 'TypeScript'}]
+    }
 
 
 ]
