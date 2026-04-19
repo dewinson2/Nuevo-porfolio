@@ -73,7 +73,7 @@ html {
     --color-backgroundDark: #0d1117;
 
     --color-foreground: #fafafa;
-    --color-primary: #a78bfa;
+    --color-primary: #6d28d9;
     --color-secondary: #1e2030;
     --color-secondary-foreground: #fafafa;
     --color-border: #2d2d3d;
@@ -81,4 +81,8 @@ html {
     --color-ring: #a78bfa;
     --font-unique: "Space Grotesk", sans-serif;
     --font-Onest: "Inter", sans-serif;
+}
+
+.dark {
+    --color-primary: #a78bfa;
 }

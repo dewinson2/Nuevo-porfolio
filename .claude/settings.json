@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/dewin/Desktop/Desarrollo/Porfolio/src/app/*/component.css)",
+      "Bash(grep -n \"semantic\\\\|<main\\\\|<article\\\\|<aside\\\\|<nav\\\\|<header\\\\|<footer\\\\|<section\" /c/Users/dewin/Desktop/Desarrollo/Porfolio/src/app/*/*.html)",
+      "Bash(node -e ':*)",
+      "Bash(node -e \"require\\('sharp'\\); console.log\\('sharp available'\\)\")"
+    ]
+  }
+}
