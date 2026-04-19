@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
@@ -10,8 +11,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   isMenuOpen: boolean = false;
   isDarkMode = false;
+  private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
   ngOnInit(): void {
+    if (!this.isBrowser) return;
+
     // 1. Revisar si el usuario ya eligió un tema antes
     const savedTheme = localStorage.getItem('theme');
 
@@ -35,12 +39,14 @@ export class NavComponent implements OnInit {
   }
 
   toggleDarkMode(): void {
+    if (!this.isBrowser) return;
     this.isDarkMode = !this.isDarkMode;
     localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
     this.applyTheme();
   }
 
   private applyTheme(): void {
+    if (!this.isBrowser) return;
     if (this.isDarkMode) {
       document.documentElement.classList.add('dark');
     } else {
